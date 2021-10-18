@@ -14,7 +14,7 @@ void draw() {
 
   if (state == 0) {
     renderTrafficLight(true, false, false);
-      renderWalkSignal(true);
+    renderWalkSignal(true);
     if (millis() - start > 2000) {
       state = 1;
       start = millis();
@@ -22,7 +22,7 @@ void draw() {
   }
   if (state == 1) {
     renderTrafficLight(true, true, false);
-      renderWalkSignal(false);
+    renderWalkSignal(false);
     if (millis() - start > 2000) {
       state = 2;
       start = millis();
@@ -30,7 +30,7 @@ void draw() {
   }
   if (state == 2) {
     renderTrafficLight(false, false, true);
-      renderWalkSignal(false);
+    renderWalkSignal(false);
     if (millis() - start > 2000) {
       state = 3;
       start = millis();
@@ -38,7 +38,7 @@ void draw() {
   }
   if (state == 3) {
     renderTrafficLight(false, true, false);
-      renderWalkSignal(false);
+    renderWalkSignal(false);
     if (millis() - start > 2000) {
       state = 0;
       start = millis();
