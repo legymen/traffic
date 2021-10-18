@@ -1,5 +1,5 @@
 void renderWalkSignal(boolean walk) {
-  // This function renders a walk signal.
+  // This function renders a walk signal
 
   color black = color(0);
   color redLight = color(255, 0, 0 );
